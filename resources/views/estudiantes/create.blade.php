@@ -47,6 +47,12 @@
          {!! $name =Form::text('rut', null, array('placeholder' => 'Ejemplo 16838100k, Dejarlo en blanco al no poseer rut','class' => 'form-control', 'upper')) !!}
         </div>
     </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Domicilio:</strong>
+         {!! $name =Form::text('domicilio', null, array('placeholder' => 'Ejemplo PARRAL','class' => 'form-control', 'upper')) !!}
+        </div>
+    </div>
 
      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
