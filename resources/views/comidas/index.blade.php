@@ -11,6 +11,10 @@
 <table class="table table-striped">
   <thead class="thead-active">
 
+
+
+
+
     <tr>
       <th scope="col">Codigo</th>
       <th scope="col">Nombre Del Estudiante</th>
