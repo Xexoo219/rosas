@@ -218,7 +218,7 @@ desired effect
           <ul class="treeview-menu">
               <li><a href="{{route('cursos.create')}}"><i class="fa fa-circle-o"></i> Agregar Cursos</a></li>
           <li><a href="{{route('ensenanzas.create')}}"><i class="fa fa-circle-o"></i> Agregar Enseñanzas</a></li>
-          <li><a href="{{route('permisos.create')}}"><i class="fa fa-circle-o"></i> Agregar Permisos</a></li>
+          <li><a href="{{route('permisos.create')}}"><i class="fa fa-circle-o"></i> Agregar Lugar</a></li>
           </ul>
         </li>
 
