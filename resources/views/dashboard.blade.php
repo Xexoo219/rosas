@@ -67,7 +67,7 @@
                 <!-- ./col -->
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-maroon">
+          <div class="small-box bg-lime">
             <div class="inner">
           <h3>{{ DB::table('ingresos')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup>
