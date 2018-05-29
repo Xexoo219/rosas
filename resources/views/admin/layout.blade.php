@@ -170,7 +170,7 @@ desired effect
         <li class="treeview">
           <a href="#">
             <i class="fa fa-graduation-cap"></i>
-            <span>Ingreso al colegio</span>
+            <span>Ingreso al Colegio</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -179,6 +179,18 @@ desired effect
               <li><a href="{{route('ingresos.create')}}"><i class="fa fa-circle-o"></i>Ingresar Estudiante</a></li>
             <li><a href="{{route('estudiantes.create')}}"><i class="fa fa-circle-o"></i>Registrar Estudiantes</a></li>
               <li><a href="{{route('estudiantes.index')}}"><i class="fa fa-circle-o"></i>Buscar Estudiantes</a></li>
+          </ul>
+        </li>
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cutlery"></i>
+            <span>Salida del Colegio</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{route('comidas.create')}}"><i class="fa fa-circle-o"></i> Ingresar Salida</a></li>
           </ul>
         </li>
          <li class="treeview">
