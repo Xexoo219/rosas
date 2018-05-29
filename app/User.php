@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
+use App\Notifications\ResetPasswordNotification;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -12,6 +13,7 @@ use APP\User;
 use APP\Ensenanza;
 use APP\Estudiante;
 use DB;
+
 
 
 class User extends Authenticatable
@@ -36,6 +38,14 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+ public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
+    }
+      /**
+     *   @param  string  $token
+     * @return void
+     */
 
     
 }
