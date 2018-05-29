@@ -101,9 +101,9 @@ class EstudianteController extends Controller
 
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
-        $permisos = Permiso::all();
+        $permisos_entrada = Permiso::all();
         $estudiante = Estudiante::findOrFail($id);
-        return view('estudiantes.show',compact('estudiante','curso','ensenanza','permisos'));
+        return view('estudiantes.show',compact('estudiante','curso','ensenanza','permisos_entrada'));
       
     }
 
