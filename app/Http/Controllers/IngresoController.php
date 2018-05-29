@@ -32,7 +32,14 @@ class IngresoController extends Controller
 
          //   $products = Product::select('products.id','products.name as product','price','marks.name as mark')->join('marks','marks.id','=','products.marks_id')->get();
            //  return view('products.index',compact('products'))
-
+        $estudiante = Estudiante::all();
+        $curso = Curso::all();
+        $ensenanza = Ensenanza::all();
+        $permiso = Permiso::all();
+                    
+        $ingresos = Ingreso::orderBy('id','DESC')->paginate(20);
+        return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante','curso','ensenanza'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
 
                     
 
