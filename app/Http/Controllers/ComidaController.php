@@ -81,9 +81,11 @@ class ComidaController extends Controller
     public function show($id)
     {
 
-
+        $curso = Curso::all();
+        $estudiante = Estudiante::all();
+        $ensenanza = Ensenanza::all();
         $comida = Comida::findOrFail($id);
-        return view('comidas.show',compact('comida'));
+        return view('comidas.show',compact('comida','estudiante','ensenanza','curso'));
       
     }
 
