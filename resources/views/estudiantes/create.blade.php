@@ -91,14 +91,10 @@
  <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
           <strong>Autorizado Especial de Entrada:</strong>
-<select class="form-control" name="permisos_entrada_id" id="permisos_entrada_id">
-    <option value="">Seleccione Permiso</option>
-     @foreach($permiso as $permisos)
-    <option value="{{$permisos->id}}">{{$permisos->nombre_permiso}}</option>
-    @endforeach
-</select>
-</div>
-</div>
+    {!! $name =Form::text('permisos_entrada_id', null, array('placeholder' => 'SI O NO','class' => 'form-control', 'upper')) !!}
+        </div>
+    </div>
+
 
 
   <div class="col-xs-12 col-sm-12 col-md-12">
@@ -111,39 +107,26 @@
      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
    <strong>Autorizado Especial de Salida:</strong>
-<select class="form-control" name="permisos_salida_id" id="permisos_salida_id">
-    <option value="">Seleccione Permiso</option>
-     @foreach($permiso as $permisos)
-    <option value="{{$permisos->id}}">{{$permisos->nombre_permiso}}</option>
-    @endforeach
-</select>
-</div>
-</div>
+       {!! $name =Form::text('permisos_salida_id', null, array('placeholder' => 'SI O NO','class' => 'form-control')) !!}
+        </div>
+    </div>
 
 
 <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-  <strong>Autorizado para Almorzar en el Establecimiento:</strong>
-<select class="form-control" name="permisos_almuerzo_id" id="permisos_almuerzo_id">
-    <option value="">Seleccione Permiso</option>
-     @foreach($permiso as $permisos)
-    <option value="{{$permisos->id}}">{{$permisos->nombre_permiso}}</option>
-    @endforeach
-</select>
-</div>
-</div> 
+ <strong>Autorizado para Almorzar en el Establecimiento:</strong>
+       {!! $name =Form::text('permisos_almuerzo_id', null, array('placeholder' => 'SI O NO','class' => 'form-control', 'upper')) !!}
+        </div>
+    </div>
+
 
 <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-  <strong>Autorizado por Actividades UTP:</strong>
-<select class="form-control" name="permisos_utp_id" id="permisos_utp_id">
-    <option value="">Seleccione Permiso</option>
-     @foreach($permiso as $permisos)
-    <option value="{{$permisos->id}}">{{$permisos->nombre_permiso}}</option>
-    @endforeach
-</select>
-</div>
-</div> 
+ <strong>Autorizado por Actividades UTP:</strong>
+       {!! $name =Form::text('permisos_utp_id', null, array('placeholder' => 'SI O NO','class' => 'form-control', 'upper')) !!}
+        </div>
+    </div>
+
 
 
      <div class="col-xs-12 col-sm-12 col-md-12">
@@ -151,7 +134,7 @@
     <a class="btn btn-primary" href="{{ route('estudiantes.index') }}"> Volver</a>
     </div>
 </div>
-</div>
+
    
     {!! Form::close() !!}
 
