@@ -70,7 +70,7 @@
             <div class="inner">
               <h3>{{ DB::table('cursos')->count('id')}}</h3>
                  <sup style="font-size: 20px">&nbsp</sup>
-              <p>Cursos Activos - 2018 cacacaca</p>
+              <p>Cursos Operativos - 2018</p>
             </div>
             <div class="icon">
               <i class="fa fa-university"></i>
@@ -86,7 +86,7 @@
             <div class="inner">
               <h3>{{ DB::table('ensenanzas')->count('id')}}</h3>
                  <sup style="font-size: 20px">&nbsp</sup>
-              <p>Enseñanzas Activos - 2018</p>
+              <p>Enseñanzas Operativos - 2018</p>
             </div>
             <div class="icon">
              <i class="fa fa-etsy"></i>
