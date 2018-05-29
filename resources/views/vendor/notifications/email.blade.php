@@ -52,7 +52,7 @@
 @isset($actionText)
 @component('mail::subcopy')
 @lang(
-    "Si tienes problemas abriendo este link \":actionText\" below\n".
+    " Si tienes problemas abriendo este link \":actionText\" below\n".
     'copia y pega esto en tu navegador: [:actionURL](:actionURL)',
     [
         'actionText' => $actionText,
