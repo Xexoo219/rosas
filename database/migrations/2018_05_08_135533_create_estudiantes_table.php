@@ -22,18 +22,14 @@ class CreateEstudiantesTable extends Migration
             $table->string('apellidos',200);
             $table->string('rut',9)->nullable();
             $table->string('entrada_especial',350)->nullable();
-            $table->integer('permisos_entrada_id')->unsigned(); 
+            $table->string('permisos_entrada_id')->nullable();
             $table->string('salida_especial',350)->nullable();   
-            $table->integer('permisos_salida_id')->unsigned(); 
-            $table->integer('permisos_almuerzo_id')->unsigned();
-            $table->integer('permisos_utp_id')->unsigned();
+            $table->string('permisos_salida_id')->nullable();
+            $table->string('permisos_almuerzo_id')->nullable();
+            $table->string('permisos_utp_id')->nullable();
             $table->timestamps();
             $table->foreign('cursos_id')->references('id')->on('cursos');
             $table->foreign('ensenanzas_id')->references('id')->on('ensenanzas');
-            $table->foreign('permisos_entrada_id')->references('id')->on('permisos');
-            $table->foreign('permisos_salida_id')->references('id')->on('permisos');
-            $table->foreign('permisos_almuerzo_id')->references('id')->on('permisos');
-            $table->foreign('permisos_utp_id')->references('id')->on('permisos');
      
         });
     }

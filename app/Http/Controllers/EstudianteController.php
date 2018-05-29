@@ -43,7 +43,7 @@ class EstudianteController extends Controller
                     ->select('cursos.nombre_curso')
                     ->get();
                     
-        $estudiantes = Estudiante::name($request->get('name'))->orderBy('id','DESC')->paginate(100);
+        $estudiantes = Estudiante::name($request->get('name'))->orderBy('id','DESC')->paginate(8);
         return view('estudiantes.index',compact('estudiantes','curso','ensenanza', 'permiso'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -101,9 +101,9 @@ class EstudianteController extends Controller
 
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
-        $permiso = Permiso::all();
+        $permisos_entrada = Permiso::all();
         $estudiante = Estudiante::findOrFail($id);
-        return view('estudiantes.show',compact('estudiante','curso','ensenanza','permiso'));
+        return view('estudiantes.show',compact('estudiante','curso','ensenanza','permisos_entrada'));
       
     }
 

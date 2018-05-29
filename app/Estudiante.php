@@ -22,16 +22,16 @@ class Estudiante extends Model
 
     public function ensenanzas(){
 
-    	return $this->belongsTo(Ensenanza::class);
+        return $this->belongsTo(Ensenanza::class);
     }
     public function cursos(){
 
-    	return $this->belongsTo(Curso::class);
+        return $this->belongsTo(Curso::class);
     }
 
       public function permisos(){
 
-    	return $this->belongsTo(Permiso::class);
+        return $this->belongsTo(Permiso::class);
     }
 
 
