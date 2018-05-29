@@ -189,7 +189,7 @@ desired effect
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{route('comidas.create')}}"><i class="fa fa-circle-o"></i> Retirar Estudiante</a></li>
+            <li><a href="{{route('comidas.create')}}"><i class="fa fa-circle-o"></i>Retirar Estudiante</a></li>
                <li><a href="{{route('estudiantes.index')}}"><i class="fa fa-circle-o"></i>Buscar Estudiantes</a></li>
           </ul>
         </li>
