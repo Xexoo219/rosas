@@ -53,7 +53,7 @@
           <h3>{{ DB::table('ingresos')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup>
 
-              <p>Alumnos con entrada especial</p>
+              <p>Total con entrada especial</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-home"></i>
