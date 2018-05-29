@@ -65,7 +65,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Autorizado Especial de Entrada:</strong>
-                {{  $estudiante->permisos_salida_id}}
+                {{  $estudiante->permisos->nombre_permiso}}
             </div>
     </div>
 
