@@ -146,7 +146,7 @@ desired effect
         <div class="pull-left info">
           <p>{{ Auth::user()->name }}</p>
           <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
         </div>
       </div>
 
@@ -202,7 +202,7 @@ desired effect
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{route('comidas.create')}}"><i class="fa fa-circle-o"></i> Ingresar Almuerzos</a></li>
+            <li><a href="{{route('comidas.create')}}"><i class="fa fa-circle-o"></i>Ingresar Almuerzos</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -214,8 +214,8 @@ desired effect
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-circle-o"></i> Estudiantes Ingresados</a></li>
-            <li><a href=""><i class="fa fa-circle-o"></i> Almuerzos Entregados</a></li>
+            <li><a href=""><i class="fa fa-circle-o"></i>Estudiantes Ingresados</a></li>
+            <li><a href=""><i class="fa fa-circle-o"></i>Almuerzos Entregados</a></li>
           </ul>
         </li>
 
@@ -228,8 +228,8 @@ desired effect
             </span>
           </a>
           <ul class="treeview-menu">
-              <li><a href="{{route('cursos.create')}}"><i class="fa fa-circle-o"></i> Agregar Cursos</a></li>
-          <li><a href="{{route('ensenanzas.create')}}"><i class="fa fa-circle-o"></i> Agregar Enseñanzas</a></li>
+              <li><a href="{{route('cursos.create')}}"><i class="fa fa-circle-o"></i>Agregar Cursos</a></li>
+          <li><a href="{{route('ensenanzas.create')}}"><i class="fa fa-circle-o"></i>Agregar Enseñanzas</a></li>
           <li><a href="{{route('estudiantes.create')}}"><i class="fa fa-circle-o"></i>Registrar Estudiantes</a></li>
           </ul>
         </li>
