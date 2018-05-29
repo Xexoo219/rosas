@@ -21,7 +21,7 @@
             <div class="inner">
               <h3>{{ DB::table('estudiantes')->count('id')}}</h3>
                 <sup style="font-size: 20px">&nbsp</sup></h3>
-              <p>Total de Alumnos</p>
+              <p>Total de Alumnos &nbsp</p>
             </div>
             <div class="icon">
               <i class="ion-android-contact"></i>
