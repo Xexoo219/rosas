@@ -53,7 +53,7 @@
           <h3>{{ DB::table('ingresos')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup>
 
-              <p>Total con entrada especial</p>
+              <p>Total con Entrada Especial</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-home"></i>
@@ -70,7 +70,7 @@
             <div class="inner">
               <h3>{{ DB::table('cursos')->count('id')}}</h3>
                  <sup style="font-size: 20px">&nbsp</sup>
-              <p>Cursos activos 2018 &nbsp</p>
+              <p>Cursos activos      2018</p>
             </div>
             <div class="icon">
               <i class="fa fa-university"></i>
