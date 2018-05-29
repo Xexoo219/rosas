@@ -177,7 +177,6 @@ desired effect
           </a>
           <ul class="treeview-menu">
               <li><a href="{{route('ingresos.create')}}"><i class="fa fa-circle-o"></i>Ingresar Estudiante</a></li>
-            <li><a href="{{route('estudiantes.create')}}"><i class="fa fa-circle-o"></i>Registrar Estudiantes</a></li>
               <li><a href="{{route('estudiantes.index')}}"><i class="fa fa-circle-o"></i>Buscar Estudiantes</a></li>
           </ul>
         </li>
@@ -191,6 +190,7 @@ desired effect
           </a>
           <ul class="treeview-menu">
             <li><a href="{{route('comidas.create')}}"><i class="fa fa-circle-o"></i> Retirar Estudiante</a></li>
+               <li><a href="{{route('estudiantes.index')}}"><i class="fa fa-circle-o"></i>Buscar Estudiantes</a></li>
           </ul>
         </li>
          <li class="treeview">
@@ -230,7 +230,7 @@ desired effect
           <ul class="treeview-menu">
               <li><a href="{{route('cursos.create')}}"><i class="fa fa-circle-o"></i> Agregar Cursos</a></li>
           <li><a href="{{route('ensenanzas.create')}}"><i class="fa fa-circle-o"></i> Agregar Enseñanzas</a></li>
-          <li><a href="{{route('permisos.create')}}"><i class="fa fa-circle-o"></i> Agregar Lugar</a></li>
+          <li><a href="{{route('estudiantes.create')}}"><i class="fa fa-circle-o"></i>Registrar Estudiantes</a></li>
           </ul>
         </li>
 
