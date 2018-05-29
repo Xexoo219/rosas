@@ -62,6 +62,25 @@
           </div>
         </div>
         <!-- ./col -->
+
+
+                <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-purple">
+            <div class="inner">
+          <h3>{{ DB::table('ingresos')->count('id')}}</h3>
+              <sup style="font-size: 20px">&nbsp</sup>
+
+              <p>Total con Retida Especial</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-ios-home"></i>
+            </div>
+            <a href="{{route('ingresos.index')}}" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
     
 
  <div class="col-lg-3 col-xs-6">
