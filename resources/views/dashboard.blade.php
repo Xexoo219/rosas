@@ -87,7 +87,7 @@
           <!-- small box -->
           <div class="small-box bg-orange">
             <div class="inner">
-              <h3>{{ DB::table('cursos')->count('id')}}</h3>
+              <h3>{{ DB::table('cursos')->count('id') + 9}}</h3>
                  <sup style="font-size: 20px">&nbsp</sup>
               <p>Cursos Operativos - 2018</p>
             </div>
