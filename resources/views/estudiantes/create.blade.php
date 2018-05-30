@@ -50,7 +50,13 @@
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Domicilio:</strong>
-         {!! $name =Form::text('domicilio', null, array('placeholder' => 'Ejemplo PARRAL','class' => 'form-control', 'upper')) !!}
+         {!! $name =Form::text('domicilio', null, array('placeholder' => 'Ejemplo Jorge Inostroza #219','maxlength' <= 350,'class' => 'form-control', 'upper')) !!}
+        </div>
+    </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Comuna:</strong>
+         {!! $name =Form::text('comuna', null, array('placeholder' => 'Ejemplo PARRAL','maxlength' <= 11,'class' => 'form-control', 'upper')) !!}
         </div>
     </div>
 

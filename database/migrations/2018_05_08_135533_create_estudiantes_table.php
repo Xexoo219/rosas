@@ -22,6 +22,7 @@ class CreateEstudiantesTable extends Migration
             $table->string('apellidos',200);
             $table->string('rut',9)->nullable();
             $table->string('domicilio',350)->nullable();
+            $table->string('comuna',11)->nullable();
             $table->string('entrada_especial',350)->nullable();
             $table->string('permisos_entrada_id')->nullable();
             $table->string('salida_especial',350)->nullable();   
