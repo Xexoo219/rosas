@@ -11,10 +11,6 @@
 <table class="table table-striped">
   <thead class="thead-active">
 
-{!! Form::open([ 'route' => 'ingresos.index','method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
-
-
-{!! Form::name('name', null, ['class' => 'form-control', 'placeholder' => 'Seleccione Fecha Exacta que Desea Buscar']) !!}
 
 
 

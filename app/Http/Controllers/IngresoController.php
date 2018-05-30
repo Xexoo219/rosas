@@ -25,7 +25,7 @@ class IngresoController extends Controller
     }
 
 
-    public function index(Request $request)
+    public function index()
     {
       // $products = Product::all();
         //return view('product')->with('products',$products);
@@ -36,10 +36,9 @@ class IngresoController extends Controller
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permiso = Permiso::all();
-                  
-
-        $ingresos = Ingreso::name($request->get('name'))->orderBy('id','DESC')->paginate(20);
-        return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante','curso'))
+                    
+        $ingresos = Ingreso::orderBy('id','DESC')->paginate(20);
+        return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante','curso','ensenanza'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
 
                     
