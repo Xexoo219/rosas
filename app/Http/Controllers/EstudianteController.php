@@ -43,7 +43,7 @@ class EstudianteController extends Controller
                     ->select('cursos.nombre_curso')
                     ->get();
                     
-        $estudiantes = Estudiante::name($request->get('name'))->orderBy('id','DESC')->paginate(8);
+        $estudiantes = Estudiante::name($request->get('name'))->orderBy('id','DESC')->paginate(20);
         return view('estudiantes.index',compact('estudiantes','curso','ensenanza', 'permiso'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
