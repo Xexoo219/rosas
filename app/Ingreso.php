@@ -24,7 +24,7 @@ class Ingreso extends Model
     	return $this->belongsTo(estudiante::class);
     }
 
-public function scopeName($query, $name){
+public function scopeName($query, $fecha){
 
        // dd("scope: " . $name);
 
