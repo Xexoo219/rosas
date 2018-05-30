@@ -182,7 +182,7 @@ desired effect
         </li>
           <li class="treeview">
           <a href="#">
-            <i class="fa fa-cutlery"></i>
+            <i class="fa fa-home"></i>
             <span>Salida del Colegio</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
