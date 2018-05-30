@@ -33,7 +33,7 @@ if($fecha != ""){
 
 
      //   $query->where('codigo_barra', $name);
-        $query->where(DB::raw( "(created_at)" ) , "LIKE", "%$fecha%"));
+        $query->where(DB::raw( "(created_at)" ) , "LIKE", "%$fecha%");
         
 
 
