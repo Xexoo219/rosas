@@ -52,7 +52,7 @@ class EnsenanzaController extends Controller
     public function store(Request $request)
     {
         request()->validate([
-            'nombre_ensenanza' => 'required',
+            'nombre_ensenanza' => 'required|max:9',
         ]);
    
 
