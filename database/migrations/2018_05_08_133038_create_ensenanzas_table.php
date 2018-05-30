@@ -15,7 +15,7 @@ class CreateEnsenanzasTable extends Migration
     {
         Schema::create('ensenanzas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre_ensenanza',10);
+            $table->string('nombre_ensenanza',9);
             $table->timestamps();
         });
     }

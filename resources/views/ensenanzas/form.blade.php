@@ -4,7 +4,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Nombre del tipo de Enseñanza:</strong>
-            {!! $nombre_ensenanza =Form::text('nombre_ensenanza', null, array('placeholder' => 'BASICA','class' => 'form-control', 'upper')) !!}
+            {!! $nombre_ensenanza =Form::text('nombre_ensenanza', null, array('placeholder' => 'PREBASICA','maxlength' <= 9,'class' => 'form-control', 'upper')) !!}
         </div>
     </div>  
     <div class="col-xs-12 col-sm-12 col-md-12">
