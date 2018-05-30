@@ -18,7 +18,7 @@
     <tr>
       <th scope="col">Codigo</th>
       <th scope="col">Nombre Del Estudiante</th>
-         <th scope="col">Dia y Hora de Ingreso al colegio</th>
+         <th scope="col">Dia y Hora de Ingreso al Colegio</th>
       
      
    
