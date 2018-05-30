@@ -38,8 +38,8 @@ class IngresoController extends Controller
         $permiso = Permiso::all();
         $ingreso = Ingreso::all();            
 
-        $ingresos = Ingreso::date($request->get('date'))->orderBy('id','DESC')->paginate(20);
-        return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante','curso','ensenanza'))
+        $ingresos = Ingreso::name($request->get('name'))->orderBy('id','DESC')->paginate(20);
+        return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante','curso'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
 
                     

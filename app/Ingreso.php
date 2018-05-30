@@ -24,16 +24,16 @@ class Ingreso extends Model
     	return $this->belongsTo(estudiante::class);
     }
 
-public function scopeDate($query, $date){
+public function scopeName($query, $name){
 
        // dd("scope: " . $name);
 
-if($date != ""){
+if($name != ""){
 
 
 
      //   $query->where('codigo_barra', $name);
-        $query->where(DB::raw( "(created_at)" ) , "to_timestamp(?)", "%$date%");
+        $query->where(DB::raw( "(created_at)" ) , "LIKE", "$name");
         
 
 

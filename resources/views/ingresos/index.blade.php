@@ -14,7 +14,7 @@
 {!! Form::open([ 'route' => 'ingresos.index','method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
 
 
-{!! Form::date('date', null, ['class' => 'form-control', 'placeholder' => 'Seleccione Fecha Exacta que Desea Buscar']) !!}
+{!! Form::name('name', null, ['class' => 'form-control', 'placeholder' => 'Seleccione Fecha Exacta que Desea Buscar']) !!}
 
 
 
