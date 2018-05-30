@@ -28,15 +28,13 @@ public function scopeName($query, $name){
 
        // dd("scope: " . $name);
 
-if($name != ""){
+if($fecha != ""){
 
 
 
      //   $query->where('codigo_barra', $name);
-        $query->where(DB::raw( "(codigo_barra)" ) , "LIKE", "%$name%") 
-        ->orWhere(DB::raw( "(rut)" ) , "LIKE", "%$name%") 
-         ->orWhere(\DB::raw("CONCAT(nombres, ' ', apellidos)"), "LIKE", "%$name%");
-
+        $query->where(DB::raw( "(created_at)" ) , "LIKE", "%$fecha%"));
+        
 
 
         }   
