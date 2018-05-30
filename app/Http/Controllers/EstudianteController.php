@@ -72,6 +72,7 @@ class EstudianteController extends Controller
         request()->validate([
             'nombres' => 'required',
             'apellidos' => 'required',
+            'rut' => 'required|max:12',
             'codigo_barra' => 'required',
             'cursos_id' => 'required',
             'domicilio' => 'required|max:350',
