@@ -36,7 +36,7 @@ class IngresoController extends Controller
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permiso = Permiso::all();
-        $ingreso = Ingreso::all();            
+                  
 
         $ingresos = Ingreso::name($request->get('name'))->orderBy('id','DESC')->paginate(20);
         return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante','curso'))
