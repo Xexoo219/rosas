@@ -205,7 +205,7 @@ desired effect
             <li><a href="{{route('comidas.create')}}"><i class="fa fa-circle-o"></i>Ingresar Almuerzos</a></li>
           </ul>
         </li>
-        <li class="treeview">
+    <!--    <li class="treeview">
           <a href="#">
             <i class="fa ion-android-clipboard"></i>
             <span>Reportes</span>
@@ -218,7 +218,7 @@ desired effect
             <li><a href=""><i class="fa fa-circle-o"></i>Almuerzos Entregados</a></li>
           </ul>
         </li>
-
+-->
           <li class="treeview">
           <a href="#">
             <i class="fa fa-list"></i>
