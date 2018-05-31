@@ -37,7 +37,7 @@
               <h3>{{ DB::table('comidas')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup></h3>
 
-              <p>Total de alimentos</p>
+              <p>Total de Alimentos</p>
             </div>
             <div class="icon">
               <i class="ion ion-fork"></i>
@@ -72,7 +72,7 @@
           <h3>{{ DB::table('ingresos')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup>
 
-              <p>Total con Retida</p>
+              <p>Total con Salida</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-home"></i>
@@ -122,7 +122,7 @@
             <div class="inner">
               <h3>{{ DB::table('users')->count('id')}}</h3>
                  <sup style="font-size: 20px">&nbsp</sup>
-              <p>Usuarios activos</p>
+              <p>Usuarios Activos</p>
             </div>
             <div class="icon">
              <i class="fa fa-users"></i>
