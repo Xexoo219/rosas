@@ -127,7 +127,7 @@
             <div class="icon">
              <i class="fa fa-users"></i>
             </div>
-            <a href="" class="small-box-footer"></a>
+            <a href="" class="small-box-footer"> <i class="fa fa-smile-o"></i></a>
           </div>
         </div>
 
