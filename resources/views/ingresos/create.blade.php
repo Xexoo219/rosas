@@ -64,7 +64,7 @@
 
     <div class="col-xs-12 col-sm-12 col-md-12">
        <button type="submit" class="btn btn-primary">Guardar</button>
-    <a class="btn btn-primary" href="{{ route('ingresos.index') }}"> Volver</a>
+    <a class="btn btn-primary" href="{{ route('estudiantes.index') }}"> Volver</a>
     </div>
 
    
