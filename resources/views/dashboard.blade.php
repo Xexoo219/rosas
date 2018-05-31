@@ -127,7 +127,7 @@
             <div class="icon">
              <i class="fa fa-users"></i>
             </div>
-            <a href="" class="small-box-footer"> <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="" class="small-box-footer"></a>
           </div>
         </div>
 
