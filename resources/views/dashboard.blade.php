@@ -21,7 +21,7 @@
             <div class="inner">
               <h3>{{ DB::table('estudiantes')->count('id')}}</h3>
                 <sup style="font-size: 20px">&nbsp</sup></h3>
-              <p>Total de Alumnos en el Colegio</p>
+              <p>Total de Alumnos</p>
             </div>
             <div class="icon">
               <i class="ion-android-contact"></i>
@@ -37,7 +37,7 @@
               <h3>{{ DB::table('comidas')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup></h3>
 
-              <p>Total de alimentos entregados</p>
+              <p>Total de alimentos</p>
             </div>
             <div class="icon">
               <i class="ion ion-fork"></i>
@@ -53,7 +53,7 @@
           <h3>{{ DB::table('ingresos')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup>
 
-              <p>Total con Entrada Especial</p>
+              <p>Total con Entrada</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-home"></i>
@@ -72,7 +72,7 @@
           <h3>{{ DB::table('ingresos')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup>
 
-              <p>Total con Retida Especial</p>
+              <p>Total con Retida</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-home"></i>
@@ -89,7 +89,7 @@
             <div class="inner">
               <h3>{{ DB::table('cursos')->count('id') + 9}}</h3>
                  <sup style="font-size: 20px">&nbsp</sup>
-              <p>Cursos Operativos - 2018</p>
+              <p>Cursos - 2018</p>
             </div>
             <div class="icon">
               <i class="fa fa-university"></i>
@@ -105,7 +105,7 @@
             <div class="inner">
               <h3>{{ DB::table('ensenanzas')->count('id')}}</h3>
                  <sup style="font-size: 20px">&nbsp</sup>
-              <p>Enseñanzas Operativos - 2018</p>
+              <p>Enseñanzas - 2018</p>
             </div>
             <div class="icon">
              <i class="fa fa-etsy"></i>
