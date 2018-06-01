@@ -69,7 +69,7 @@
           <!-- small box -->
           <div class="small-box bg-teal">
             <div class="inner">
-          <h3>{{ DB::table('salidas')->count('id')}}</h3>
+          <h3>{{ DB::table('ingresos')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup>
 
               <p>Total de Salida</p>
