@@ -190,7 +190,7 @@ desired effect
           </a>
           <ul class="treeview-menu">
             <li><a href="{{route('salidas.create')}}"><i class="fa fa-circle-o"></i>Retirar Estudiante</a></li>
-               <li><a href="{{route('estudiantes.index')}}"><i class="fa fa-circle-o"></i>Historico de Salidas</a></li>
+               <li><a href="{{route('salidas.index')}}"><i class="fa fa-circle-o"></i>Historico de Salidas</a></li>
           </ul>
         </li>
          <li class="treeview">
