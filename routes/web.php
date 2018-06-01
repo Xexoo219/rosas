@@ -25,3 +25,4 @@ Route::resource('cursos','CursoController');
 Route::resource('ensenanzas','EnsenanzaController');
 Route::resource('permisos','PermisoController');
 Route::resource('ingresos','IngresoController');
+Route::resource('salidas','SalidaController');
