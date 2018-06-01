@@ -3,6 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use App\Estudiante;
+use App\Curso;
+use App\Ensenanza;
+use App\Permiso;
+use App\Comida;
+use App\Ingreso;
+use APP\Salida;
+use DB;
+
 
 class SalidaController extends Controller
 {
