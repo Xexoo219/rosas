@@ -77,7 +77,7 @@
             <div class="icon">
               <i class="ion ion-ios-home"></i>
             </div>
-            <a href="{{route('ingresos.index')}}" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{route('salidas.index')}}" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
