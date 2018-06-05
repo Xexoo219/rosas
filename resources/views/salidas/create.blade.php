@@ -27,7 +27,7 @@
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
 
-                <h2>Ingresar Estudiante para Salir</h2>
+                <h2>Ingresar Estudiante que Van a Retirar</h2>
                 <p>&nbsp</p>
             </div>
         </div>
@@ -55,33 +55,30 @@
  <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Ingresar Algun Motivo:</strong>
-            {!! $name =Form::text('motivo', null, array('placeholder' => 'Cual es el motivo de su retirada','class' => 'form-control', 'upper')) !!}
+            {!! $name =Form::text('motivo', null, array('placeholder' => 'Personal','class' => 'form-control', 'upper')) !!}
         </div>
     </div>
 
      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>Ingresar Fecha y Hora</strong>
-            {!! $name =Form::name('hora_salida', null, array('placeholder' => '10:00','class' => 'form-control', 'upper')) !!}
-        </div>
-    </div>
-
- <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
-            <strong>Ingresar Apoderado Responsable:</strong>
-            {!! $name =Form::text('persona_responsable', null, array('placeholder' => 'Nombre y apellidos','class' => 'form-control', 'upper')) !!}
+            <strong>Ingresar Hora de Salida:</strong>
+            {!! $name =Form::text('hora_salida', null, array('placeholder' => '13:00','class' => 'form-control', 'upper')) !!}
         </div>
     </div>
 
      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>Ingresar Numero de Contacto:</strong>
-            {!! $name =Form::number('telefono', null, array('placeholder' => '56984536096','class' => 'form-control', 'upper')) !!}
+            <strong>Ingresar Persona Responsable:</strong>
+            {!! $name =Form::text('persona_responsable', null, array('placeholder' => '13:00','class' => 'form-control', 'upper')) !!}
         </div>
     </div>
 
-
-
+     <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Ingresar Telefono:</strong>
+            {!! $name =Form::text('telefono', null, array('placeholder' => '56984536000','class' => 'form-control', 'upper')) !!}
+        </div>
+    </div>
 
 
 
