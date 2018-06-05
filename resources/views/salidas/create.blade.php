@@ -69,7 +69,7 @@
      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Ingresar Persona Responsable:</strong>
-            {!! $name =Form::text('persona_responsable', null, array('placeholder' => '13:00','class' => 'form-control', 'upper')) !!}
+            {!! $name =Form::text('persona_responsable', null, array('placeholder' => 'Nombre y Apellidos','class' => 'form-control', 'upper')) !!}
         </div>
     </div>
 
