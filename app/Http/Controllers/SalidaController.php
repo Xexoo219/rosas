@@ -9,8 +9,9 @@ use App\Curso;
 use App\Ensenanza;
 use App\Permiso;
 use App\Comida;
+use App\Salida;
 use App\Ingreso;
-use APP\Salida;
+
 use DB;
 
 
@@ -38,10 +39,9 @@ class SalidaController extends Controller
         $estudiante = Estudiante::all();
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
-        $permiso = Permiso::all();
-                    
+        $permiso = Permiso::all();                
         $salidas = Salida::orderBy('id','DESC')->paginate(20);
-        return view('salidas.index',compact('salidas','ensenanza','permiso','estudiante','curso','ensenanza'))
+        return view('salidas.index',compact('salidas','ensenanza','permiso','estudiante','curso'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
 
                     
