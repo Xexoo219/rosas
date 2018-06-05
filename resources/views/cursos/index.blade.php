@@ -32,7 +32,7 @@
   <tbody>
   @foreach($cursos as $curso)
     <tr>
-    <td>{{$curso->id}}</td>
+    <td><a class="btn btn-primary">{{$curso->id}}</a> </td>
      <td>{{($curso->nombre_curso)}}</td>
   
    <!--  <td>
