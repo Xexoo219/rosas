@@ -49,14 +49,8 @@
 
   </tbody>
 </table>
-
-  <div class="row">
-    <div class="col-md-2 col-md-offset-5">
-
 {!! $estudiantes->render() !!}
-</div>
 
-</div>
 </div>
 
 
