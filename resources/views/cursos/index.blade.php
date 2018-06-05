@@ -27,7 +27,6 @@
     <tr>
       <th scope="col">Codigo</th>
       <th scope="col">Nombre Del Curso</th>
-      <th scope="col">Accion</th>
     </tr>
   </thead>
   <tbody>

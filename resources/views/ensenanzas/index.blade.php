@@ -27,7 +27,6 @@
     <tr>
       <th scope="col">Codigo</th>
       <th scope="col">Nombre De Enseñanzas</th>
-      <th scope="col">Accion</th>
     </tr>
   </thead>
   <tbody>
