@@ -31,7 +31,7 @@
     <tr>
     <td><a href="{{ route('salidas.show', $salida->id)}}" class="btn btn-primary">{{$salida->estudiantes->codigo_barra}}</a> </td>
       <td>  {{ $salida->estudiantes->nombres}}  {{ $salida->estudiantes->apellidos}}</td>
-     <td>{{($salida->hora_salida)}}</td>
+     <td>{{($salida->created_at)}} {{($salida->hora_salida)}}</td>
     </tr>
     @endforeach
 
