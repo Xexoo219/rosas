@@ -80,7 +80,7 @@ class SalidaController extends Controller
        ]);
 
       Salida::create($request->all());  
-        return redirect()->route('estudiantes.index')
+        return redirect()->route('salidas.index')
                         ->with('success','Alumno fue ingresado para retirar del establecimiento correctamente.');
     }
 
