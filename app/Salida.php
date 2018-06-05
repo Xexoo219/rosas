@@ -13,7 +13,7 @@ use APP\Ingreso;
 use APP\Salida;
 use DB;
 
-class Ingreso extends Model
+class Salida extends Model
 {
    protected $table = 'salidas';
     protected $primarykey = 'id';
