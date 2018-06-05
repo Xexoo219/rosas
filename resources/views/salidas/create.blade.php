@@ -62,7 +62,7 @@
      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Ingresar Fecha y Hora</strong>
-            {!! $name =Form::date('motivo', null, array('placeholder' => 'Cual es el motivo de su retirada','class' => 'form-control', 'upper')) !!}
+            {!! $name =Form::name('hora_salida', null, array('placeholder' => '10:00','class' => 'form-control', 'upper')) !!}
         </div>
     </div>
 

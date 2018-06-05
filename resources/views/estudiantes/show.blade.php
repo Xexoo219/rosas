@@ -107,14 +107,7 @@
             </div>
     </div>  
 
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-          <h3>      <strong>Autorizado por Actividades UTP:</strong>
-                {{ $estudiante->permisos_utp_id}}</h3>
-            </div>
-    </div>  
-
-
+     
        <div class="col-xs-12 col-sm-12 col-md-12">
     <div class="pull-left">
           <td><a href="{{ route('ingresos.create')}}" class="btn btn-primary">Ingresar al Establecimiento</a> 

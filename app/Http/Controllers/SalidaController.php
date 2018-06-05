@@ -21,9 +21,31 @@ class SalidaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct(){
+
+        $this->middleware('auth');
+    }
+
+
     public function index()
     {
-        //
+      // $products = Product::all();
+        //return view('product')->with('products',$products);
+
+         //   $products = Product::select('products.id','products.name as product','price','marks.name as mark')->join('marks','marks.id','=','products.marks_id')->get();
+           //  return view('products.index',compact('products'))
+        $estudiante = Estudiante::all();
+        $curso = Curso::all();
+        $ensenanza = Ensenanza::all();
+        $permiso = Permiso::all();
+                    
+        $salidas = Ingreso::orderBy('id','DESC')->paginate(20);
+        return view('salidas.index',compact('salidas','ensenanza','permiso','estudiante','curso','ensenanza'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
+
+                    
+
     }
 
     /**
@@ -33,7 +55,8 @@ class SalidaController extends Controller
      */
     public function create()
     {
-        //
+        $estudiante = Estudiante::all();
+         return view('salidas.create',compact('estudiante'));
     }
 
     /**
@@ -44,8 +67,23 @@ class SalidaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      
+    request()->validate([    
+    'estudiantes_id' => 'required',
+    'motivo' => 'required',
+    'hora_salida' => 'required|max:5',
+    'persona_responsable' => 'required|max:200',
+    'telefono' => 'required|max:11',
+
+
+
+       ]);
+
+      Ingreso::create($request->all());  
+        return redirect()->route('estudiantes.index')
+                        ->with('success','Alumno fue ingresado al establecimiento correctamente.');
     }
+
 
     /**
      * Display the specified resource.
@@ -55,7 +93,15 @@ class SalidaController extends Controller
      */
     public function show($id)
     {
-        //
+
+        $curso = Curso::all();
+        $ensenanza = Ensenanza::all();
+        $permisos_entrada = Permiso::all();
+        $estudiante = Estudiante::findOrFail($id);
+        $ingreso = Ingreso::findOrFail($id);
+        $salida = Salida::findOrFail($id);
+        return view('salidas.show',compact('salida','curso','ensenanza','estudiante'));
+      
     }
 
     /**
@@ -66,7 +112,8 @@ class SalidaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $salida = Salida::findOrFail($id);
+        return view('salidas.edit',compact('salida'));
     }
 
     /**
@@ -77,8 +124,15 @@ class SalidaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        //
+     {
+        request()->validate([
+            'name' => 'required',
+            'price' => 'required',
+            
+        ]);
+        Comida::findOrFail($id)->update($request->all());
+        return redirect()->route('comidas.index')
+                        ->with('success','Producto actualizado correctamente');
     }
 
     /**
@@ -89,6 +143,11 @@ class SalidaController extends Controller
      */
     public function destroy($id)
     {
-        //
+           Comida::findOrFail($id)->delete();
+        return redirect()->route('comidas.index')
+                        ->with('success','Producto eliminado correctamente');
     }
+
+
 }
+

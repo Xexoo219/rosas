@@ -17,7 +17,7 @@ class CreateSalidasTable extends Migration
             $table->increments('id');
             $table->integer('estudiantes_id')->unsigned();
             $table->string('motivo',100);
-            $table->date('hora_salida');
+            $table->string('hora_salida',5);
             $table->string('persona_responsable');
             $table->bigInteger('telefono');
             $table->timestamps();
