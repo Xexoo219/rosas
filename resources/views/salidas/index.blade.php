@@ -31,13 +31,13 @@
     <tr>
     <td><a href="{{ route('salidas.show', $salida->id)}}" class="btn btn-primary">{{$salida->estudiantes->codigo_barra}}</a> </td>
       <td>  {{ $salida->estudiantes->nombres}}  {{ $salida->estudiantes->apellidos}}</td>
-     <td>{{($salida->created_at)}}</td>
+     <td>{{($salida->hora_salida)}}</td>
     </tr>
     @endforeach
 
   </tbody>
 </table>
-<a href="{{ route('salidas.create', $salida->id)}}" class="btn btn-primary">Ingresar al Establecimiento</a>
+<a href="{{ route('salidas.create', $salida->id)}}" class="btn btn-primary">Ingresar retirada del Estudiante</a>
   <div class="row">
     <div class="col-md-2 col-md-offset-5">
 
