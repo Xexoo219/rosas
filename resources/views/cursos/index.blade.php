@@ -36,10 +36,10 @@
     <td><a href="{{ route('cursos.show', $curso->id)}}" class="btn btn-primary">{{$curso->id}}</a> </td>
      <td>{{($curso->nombre_curso)}}</td>
   
-     <td>
+   <!--  <td>
           {!! Form::open(['method' => 'DELETE','route' => ['cursos.destroy', $curso->id],'style'=>'display:inline']) !!}
             {!! Form::submit('Eliminar', ['class' => 'btn btn-danger']) !!}
-            {!! Form::close() !!}</td>
+            {!! Form::close() !!}</td> -->
 </td>
     </tr>
     @endforeach
