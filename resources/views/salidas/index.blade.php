@@ -19,7 +19,7 @@
     <tr>
       <th scope="col">Codigo</th>
       <th scope="col">Nombre Del Estudiante</th>
-         <th scope="col">Dia y Hora de Ingreso al Colegio</th>
+         <th scope="col">Dia y Hora de Ingreso al Sistema</th>
       
      
    
@@ -29,7 +29,7 @@
   <tbody>
   @foreach($salidas as $salida)
     <tr>
-    <td><a href="{{ route('salidas.show', $salida->id)}}" class="btn btn-primary">{{$salida->estudiantes->codigo_barra}}</a> </td>
+    <td><a href="{{ route('salidas.show', $salida->id)}}" class="btn btn-primary">Ver Detalles</a> </td>
       <td>  {{ $salida->estudiantes->nombres}}  {{ $salida->estudiantes->apellidos}}</td>
      <td>{{($salida->created_at)}} {{($salida->hora_salida)}}</td>
     </tr>
