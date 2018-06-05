@@ -32,7 +32,7 @@
   <tbody>
   @foreach($cursos as $curso)
     <tr>
-    <td><a href="{{ route('cursos.show', $curso->id)}}" class="btn btn-primary">{{$curso->id}}</a> </td>
+    <td>{{$curso->id}}</td>
      <td>{{($curso->nombre_curso)}}</td>
   
    <!--  <td>

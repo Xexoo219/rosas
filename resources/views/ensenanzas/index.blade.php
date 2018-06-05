@@ -32,7 +32,7 @@
   <tbody>
   @foreach($ensenanzas as $ensenanza)
     <tr>
-    <td><a href="{{ route('ensenanzas.show', $ensenanza->id)}}" class="btn btn-primary">{{$ensenanza->id}}</a> </td>
+    <td>{{$ensenanza->id}}</td>
      <td>{{($ensenanza->nombre_ensenanza)}}</td>
   
   <!--   <td>
