@@ -46,12 +46,9 @@
        
 </table>
  <!-- <a class="btn btn-primary" href="{{ route('ensenanzas.create') }}">Ingresar enseñanza</a> -->
-  <div class="row">
-    <div class="col-md-2 col-md-offset-5">
-{!! $ensenanzas->render() !!}
-</div>
 
-</div>
+{!! $ensenanzas->render() !!}
+
 </div>
 
 

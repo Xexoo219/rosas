@@ -37,14 +37,9 @@
 
   </tbody>
 </table>
-<a href="{{ route('ingresos.create', $ingreso->id)}}" class="btn btn-primary">Ingresar al Establecimiento</a>
-  <div class="row">
-    <div class="col-md-2 col-md-offset-5">
-
 {!! $ingresos->render() !!}
-</div>
+<a href="{{ route('ingresos.create', $ingreso->id)}}" class="btn btn-primary">Ingresar al Establecimiento</a>
 
-</div>
 </div>
 
 

@@ -36,14 +36,9 @@
 
   </tbody>
 </table>
-<a href="{{ route('comidas.create', $comida->id)}}" class="btn btn-primary">Ingresar Comida</a>
-  <div class="row">
-    <div class="col-md-2 col-md-offset-5">
-
 {!! $comidas->render() !!}
-</div>
+<a href="{{ route('comidas.create', $comida->id)}}" class="btn btn-primary">Ingresar Comida</a>
 
-</div>
 </div>
 
 
