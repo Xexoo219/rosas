@@ -45,13 +45,9 @@
   </tbody>
        
 </table>
- <!-- <a class="btn btn-primary" href="{{ route('cursos.create') }}">Ingresar Curso</a> -->
-  <div class="row">
-    <div class="col-md-2 col-md-offset-5">
 {!! $cursos->render() !!}
-</div>
+ <!-- <a class="btn btn-primary" href="{{ route('cursos.create') }}">Ingresar Curso</a> -->
 
-</div>
 </div>
 
 
