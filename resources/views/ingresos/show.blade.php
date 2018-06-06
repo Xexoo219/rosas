@@ -42,6 +42,13 @@
     </div>
 
        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+        <h3>        <strong>Comentario:</strong>
+                {{ $ingreso->comentario}}</h3>
+            </div>
+    </div>
+
+       <div class="col-xs-12 col-sm-12 col-md-12">
     <div class="pull-left">
          <a class="btn btn-primary" href="{{ route('ensenanzas.index')}}">Volver</a> </td>
             </div>
