@@ -48,6 +48,15 @@
             </div>
     </div>
 
+      <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3> <strong>Ingresado:</strong>
+                {{$created = $comida->created_at}}</h3>
+           
+            </div>
+        </div>
+
+
        <div class="col-xs-12 col-sm-12 col-md-12">
     <div class="pull-left">
          <a class="btn btn-primary" href="{{ route('comidas.index')}}">Volver</a> </td>
