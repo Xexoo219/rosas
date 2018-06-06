@@ -5,10 +5,10 @@ namespace App;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
-use APP\Curso;
-use APP\Ensenanza;
-use APP\Estudiante;
-use APP\Permiso;
+use App\Curso;
+use App\Ensenanza;
+use App\Estudiante;
+use App\Permiso;
 use DB;
 
 class Permiso extends Model

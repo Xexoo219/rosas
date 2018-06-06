@@ -5,11 +5,11 @@ namespace App;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
-use APP\Comida;
-use APP\Curso;
-use APP\Ensenanza;
-use APP\Estudiante;
-use APP\Ingreso;
+use App\Comida;
+use App\Curso;
+use App\Ensenanza;
+use App\Estudiante;
+use App\Ingreso;
 use DB;
 
 class Ingreso extends Model
