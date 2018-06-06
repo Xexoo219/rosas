@@ -43,7 +43,6 @@
 
        <div class="col-xs-12 col-sm-12 col-md-12">
     <div class="pull-left">
-         <td> <a href="{{ route('ensenanzas.edit', $ensenanza->id)}}" class="btn btn-primary">Editar</a>
          <a class="btn btn-primary" href="{{ route('ensenanzas.index')}}">Volver</a> </td>
             </div>
     </div>
