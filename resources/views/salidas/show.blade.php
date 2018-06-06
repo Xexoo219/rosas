@@ -46,10 +46,42 @@
             </div>
     </div>
 
+     <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3> <strong>Motivo:</strong>
+                {{$created = $salida->motivo}}</h3>
+           
+            </div>
+        </div>
+
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3> <strong>Motivo:</strong>
+                {{$created = $salida->hora_salida}}</h3>
+           
+            </div>
+        </div>
+
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3> <strong>Motivo:</strong>
+                {{$created = $salida->persona_responsable}}</h3>
+           
+            </div>
+        </div>
+
+         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3> <strong>Motivo:</strong>
+                {{$created = $salida->telefono}}</h3>
+           
+            </div>
+        </div>
+
     <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Ingresado:</strong>
-                {{$created = $salida->created_at}}
+            <h3> <strong>Ingresado:</strong>
+                {{$created = $salida->created_at}}</h3>
            
             </div>
         </div>
