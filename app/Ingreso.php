@@ -7,9 +7,10 @@ use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use App\Comida;
 use App\Curso;
+use App\Ingreso;
 use App\Ensenanza;
 use App\Estudiante;
-use App\Ingreso;
+
 use DB;
 
 class Ingreso extends Model

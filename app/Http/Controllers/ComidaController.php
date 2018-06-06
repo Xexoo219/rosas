@@ -34,8 +34,7 @@ class ComidaController extends Controller
         $estudiante = Estudiante::all();
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
-        $permiso = Permiso::all();
-                    
+        $permiso = Permiso::all();       
         $comidas = Comida::orderBy('id','DESC')->paginate(20);
         return view('comidas.index',compact('comidas','ensenanza','permiso','estudiante'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
