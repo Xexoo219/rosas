@@ -9,7 +9,7 @@ use App\Curso;
 use App\Ensenanza;
 use App\Permiso;
 use App\Comida;
-use App\Ingreso;
+use APP\Ingreso;
 use DB;
 
 class IngresoController extends Controller
