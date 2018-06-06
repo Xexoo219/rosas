@@ -89,6 +89,7 @@ class IngresoController extends Controller
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
         $estudiante = Estudiante::findOrFail($id);
+         $ingreso = Ingreso::findOrFail($id);
         return view('ingresos.show',compact('ingreso','curso','ensenanza','estudiante'));
       
     }
