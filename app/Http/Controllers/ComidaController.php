@@ -79,7 +79,7 @@ class ComidaController extends Controller
      */
     public function show($id)
     {
-
+        $comida = Comida::findOrFail($id);
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
