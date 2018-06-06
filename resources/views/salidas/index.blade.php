@@ -37,7 +37,7 @@
 
   </tbody>
 </table>
-<a href="{{ route('salidas.create', $salida->id)}}" class="btn btn-primary">Ingresar retirada del Estudiante</a>
+<a href="{{ route('salidas.create', $salida->id)}}" class="btn btn-primary">Retirar Estudiante</a>
   <div class="row">
     <div class="col-md-2 col-md-offset-5">
 
