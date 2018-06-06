@@ -11,6 +11,7 @@ use App\Permiso;
 use App\Comida;
 use App\Ingreso;
 use DB;
+
 class IngresoController extends Controller
 {
     /**
@@ -85,11 +86,11 @@ class IngresoController extends Controller
     public function show($id)
     {
 
-      $curso = Curso::all();
+        $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
         $estudiante = Estudiante::findOrFail($id);
-         $ingreso = Ingreso::findOrFail($id);
+        $ingreso = Ingreso::all();
         return view('ingresos.show',compact('ingreso','curso','ensenanza','estudiante'));
       
     }
