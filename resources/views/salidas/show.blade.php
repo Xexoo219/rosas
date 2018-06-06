@@ -56,7 +56,7 @@
 
          <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-            <h3> <strong>Motivo:</strong>
+            <h3> <strong>Hora de Salida:</strong>
                 {{$created = $salida->hora_salida}}</h3>
            
             </div>
@@ -64,7 +64,7 @@
 
          <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-            <h3> <strong>Motivo:</strong>
+            <h3> <strong>Persona Responsable:</strong>
                 {{$created = $salida->persona_responsable}}</h3>
            
             </div>
@@ -72,7 +72,7 @@
 
          <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-            <h3> <strong>Motivo:</strong>
+            <h3> <strong>Telefono:</strong>
                 {{$created = $salida->telefono}}</h3>
            
             </div>
