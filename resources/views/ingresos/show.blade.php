@@ -65,7 +65,7 @@
     <div class="pull-left">
       <!--    <td><a href="{{ route('ingresos.create')}}" class="btn btn-primary">Ingresar al Establecimiento</a>  -->
   <!--       <td><a href="{{ route('estudiantes.edit', $estudiante->id)}}" class="btn btn-primary">Editar</a> -->
-               <a class="btn btn-primary" href="{{ route('estudiantes.index')}}">Volver</a></td>
+               <a class="btn btn-primary" href="{{ route('ingresos.index')}}">Volver</a></td>
             </div>
     </div>
      </div>
