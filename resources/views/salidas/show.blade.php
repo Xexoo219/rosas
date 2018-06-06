@@ -48,6 +48,26 @@
 
 
     
+     <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3>    <strong>Motivo:</strong>
+                {{ $salida->motivo}} </h3>
+            </div>
+    </div>
+ <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3>    <strong>Persona Responsable:</strong>
+                {{ $salida->persona_responsable}} </h3>
+            </div>
+    </div>
+
+     <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3>    <strong>Telefono:</strong>
+                {{ $salida->telefono}} </h3>
+            </div>
+    </div>
+    
 
 
        <div class="col-xs-12 col-sm-12 col-md-12">
