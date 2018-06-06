@@ -99,7 +99,7 @@ class SalidaController extends Controller
         $permisos_entrada = Permiso::all();
         $estudiante = Estudiante::findOrFail($id);
         $ingreso = Ingreso::findOrFail($id);
-        $salida = Salida::findOrFail($id);
+        $salida = Salida::all();
         return view('salidas.show',compact('salida','curso','ensenanza','estudiante'));
       
     }
