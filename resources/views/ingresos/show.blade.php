@@ -78,34 +78,6 @@
 
 
 
-    <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-             <h3>   <strong>Salida Especial:</strong>
-                {{ $estudiante->salida_especial}}</h3>
-            </div>
-    </div>
-    
-         <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-             <h3>   <strong>Autorizado Especial de Salida:</strong>
-                {{ $estudiante->permisos_salida_id}}</h3>
-            </div>
-    </div>  
-
-
-         <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-          <h3>      <strong>Autorizado para Almorzar en el Establecimiento:</strong>
-                {{ $estudiante->permisos_almuerzo_id}}</h3>
-            </div>
-    </div>  
-
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-          <h3>      <strong>Autorizado por Actividades UTP:</strong>
-                {{ $estudiante->permisos_utp_id}}</h3>
-            </div>
-    </div>  
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
