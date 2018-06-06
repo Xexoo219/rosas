@@ -27,7 +27,7 @@
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
 
-                <h2>Ingresar Alumno a Retirar</h2>
+                <h2>Ingresar almuerzos</h2>
                 <p>&nbsp</p>
             </div>
         </div>
@@ -36,7 +36,7 @@
 
   
 
-    {!! Form::open(array('route' => 'ingresos.store','method'=>'POST')) !!}
+    {!! Form::open(array('route' => 'comidas.store','method'=>'POST')) !!}
 
 
       <div class="col-xs-12 col-sm-12 col-md-12">
@@ -50,14 +50,6 @@
 </select>
 </div>
 </div>
-
- <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
-            <strong>Ingresar Algun Comentario:</strong>
-            {!! $name =Form::text('comentario', null, array('placeholder' => 'No es necesario rellenarlo','class' => 'form-control', 'upper')) !!}
-        </div>
-    </div>
-
 
     <div class="col-xs-12 col-sm-12 col-md-12">
        <button type="submit" class="btn btn-primary">Guardar</button>
