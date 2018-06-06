@@ -50,7 +50,7 @@
     </div>
   <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-        <h3>        <strong>Enseñanza:</strong>
+        <h3>        <strong>Autorización:</strong>
                 {{ $estudiante->permisos_entrada_id}}</h3>
             </div>
     </div>
