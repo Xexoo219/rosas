@@ -15,14 +15,14 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
             <h3>    <strong>Nombre:</strong> 
-                {{ $estudiante->nombres}} </h3>
+                {{ $estudiantes->nombres}} </h3>
             </div>
         </div>
 
          <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
             <h3>    <strong>Apellido:</strong>
-                {{ $estudiante->apellidos}} </h3>
+                {{ $estudiantes->apellidos}} </h3>
             </div>
     </div>
 
@@ -30,14 +30,14 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
        <h3>         <strong>Curso:</strong>
-                {{ $estudiante->cursos->nombre_curso}}</h3>
+                {{ $estudiantes->cursos->nombre_curso}}</h3>
             </div>
     </div>
 
      <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
         <h3>        <strong>Enseñanza:</strong>
-                {{ $estudiante->ensenanzas->nombre_ensenanza}}</h3>
+                {{ $estudiantes->ensenanzas->nombre_ensenanza}}</h3>
             </div>
     </div>
 
