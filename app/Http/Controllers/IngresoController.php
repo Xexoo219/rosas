@@ -37,8 +37,7 @@ class IngresoController extends Controller
         $estudiante = Estudiante::all();
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
-        $permiso = Permiso::all();
-                    
+        $permiso = Permiso::all();               
         $ingresos = Ingreso::orderBy('id','DESC')->paginate(20);
         return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante','curso','ensenanza'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
@@ -91,7 +90,6 @@ class IngresoController extends Controller
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
         $estudiante = Estudiante::findOrFail($id);
-        $ingreso = Ingreso::all();
         return view('ingresos.show',compact('ingreso','curso','ensenanza','estudiante'));
       
     }
