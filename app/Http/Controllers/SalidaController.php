@@ -130,8 +130,8 @@ class SalidaController extends Controller
             'price' => 'required',
             
         ]);
-        Comida::findOrFail($id)->update($request->all());
-        return redirect()->route('comidas.index')
+        Salida::findOrFail($id)->update($request->all());
+        return redirect()->route('salidas.index')
                         ->with('success','Producto actualizado correctamente');
     }
 
@@ -143,8 +143,8 @@ class SalidaController extends Controller
      */
     public function destroy($id)
     {
-           Comida::findOrFail($id)->delete();
-        return redirect()->route('comidas.index')
+           Salida::findOrFail($id)->delete();
+        return redirect()->route('salidas.index')
                         ->with('success','Producto eliminado correctamente');
     }
 
