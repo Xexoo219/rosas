@@ -82,10 +82,12 @@ class ComidaController extends Controller
     {
 
         $curso = Curso::all();
-        $estudiante = Estudiante::all();
         $ensenanza = Ensenanza::all();
-        $comida = Comida::findOrFail($id);
-        return view('comidas.show',compact('comida','estudiante','ensenanza','curso'));
+        $permisos_entrada = Permiso::all();
+        $estudiante = Estudiante::findOrFail($id);
+        $ingreso = Ingreso::findOrFail($id);
+        $comida = Comida::all();
+        return view('comidas.show',compact('comida','ingreso','curso','ensenanza','estudiante'));
       
     }
 
