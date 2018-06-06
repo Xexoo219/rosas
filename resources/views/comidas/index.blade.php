@@ -19,7 +19,7 @@
       <th scope="col">Codigo</th>
       <th scope="col">Nombre Del Estudiante</th>
        <th scope="col">Permiso para Almorzar</th>
-         <th scope="col">Dia y Hora que Ingresa el Alumno</th>
+         <th scope="col">Dia y Hora que Ingresa para Almorzar</th>
       
      
    
