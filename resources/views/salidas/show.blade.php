@@ -72,7 +72,7 @@
 
        <div class="col-xs-12 col-sm-12 col-md-12">
     <div class="pull-left">
-       <!--   <td><a href="{{ route('ingresos.create')}}" class="btn btn-primary">Ingresar al Establecimiento</a> -->
+        <td><a href="{{ route('salidas.create')}}" class="btn btn-primary">Retirar Estudiante</a> -->
   <!--       <td><a href="{{ route('estudiantes.edit', $estudiante->id)}}" class="btn btn-primary">Editar</a> -->
                <a class="btn btn-primary" href="{{ route('salidas.index')}}">Volver</a></td>
             </div>
