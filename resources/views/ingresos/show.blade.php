@@ -54,16 +54,6 @@
                 {{ $estudiante->permisos_entrada_id}}</h3>
             </div>
     </div>
-
-   <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-        <h3>        <strong>Autorización:</strong>
-               {{$created = $ingreso->created_at}}</h3>
-            </div>
-    </div>
-
-   
-   
    
 
 
