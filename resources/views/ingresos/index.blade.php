@@ -18,7 +18,7 @@
     <tr>
       <th scope="col">Codigo</th>
       <th scope="col">Nombre Del Estudiante</th>
-         <th scope="col">Dia y Hora de Ingreso al Colegio</th>
+         <th scope="col">Dia y Hora que Ingresa el Alumno</th>
       
      
    
@@ -37,7 +37,7 @@
   </tbody>
 </table>
 {!! $ingresos->render() !!}
-<a href="{{ route('ingresos.create', $ingreso->id)}}" class="btn btn-primary">Ingresar al Establecimiento</a>
+<a href="{{ route('ingresos.create', $ingreso->id)}}" class="btn btn-primary">Ingresar Comida</a>
 
 </div>
 

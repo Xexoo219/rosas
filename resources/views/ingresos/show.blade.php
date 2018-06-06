@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Detalles del Estudiante de Ingreso</h2>
+                <h2> Detalles De Enseñanza</h2>
             </div>
             
         </div>
@@ -41,24 +41,9 @@
             </div>
     </div>
 
-     <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-        <h3>        <strong>Ingreso:</strong>
-                {{ $ingreso->created_at}}</h3>
-            </div>
-    </div>
-
-
-
-  
-  
-
-
        <div class="col-xs-12 col-sm-12 col-md-12">
     <div class="pull-left">
-      <!--    <td><a href="{{ route('ingresos.create')}}" class="btn btn-primary">Ingresar al Establecimiento</a>  -->
-  <!--       <td><a href="{{ route('estudiantes.edit', $estudiante->id)}}" class="btn btn-primary">Editar</a> -->
-               <a class="btn btn-primary" href="{{ route('estudiantes.index')}}">Volver</a></td>
+         <a class="btn btn-primary" href="{{ route('ensenanzas.index')}}">Volver</a> </td>
             </div>
     </div>
      </div>
