@@ -20,7 +20,7 @@ class Comida extends Model
 
     public function estudiantes(){
 
-    	return $this->belongsTo(estudiante::class);
+    	return $this->belongsTo(Estudiante::class);
     }
 
 }
