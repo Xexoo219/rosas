@@ -178,6 +178,7 @@ desired effect
           <ul class="treeview-menu">
               <li><a href="{{route('ingresos.create')}}"><i class="fa fa-circle-o"></i>Ingresar Estudiante</a></li>
               <li><a href="{{route('estudiantes.index')}}"><i class="fa fa-circle-o"></i>Buscar Estudiantes</a></li>
+               <li><a href="{{route('ingresos.index')}}"><i class="fa fa-circle-o"></i>Registro Historico de Ingreso</a></li>
           </ul>
         </li>
           <li class="treeview">
@@ -190,7 +191,7 @@ desired effect
           </a>
           <ul class="treeview-menu">
             <li><a href="{{route('salidas.create')}}"><i class="fa fa-circle-o"></i>Retirar Estudiante</a></li>
-               <li><a href="{{route('salidas.index')}}"><i class="fa fa-circle-o"></i>Historico de Salidas</a></li>
+               <li><a href="{{route('salidas.index')}}"><i class="fa fa-circle-o"></i>Registro Historico de Salidas</a></li>
           </ul>
         </li>
          <li class="treeview">
@@ -203,6 +204,7 @@ desired effect
           </a>
           <ul class="treeview-menu">
             <li><a href="{{route('comidas.create')}}"><i class="fa fa-circle-o"></i>Ingresar Almuerzos</a></li>
+                 <li><a href="{{route('comidas.index')}}"><i class="fa fa-circle-o"></i>Registro Historico de Almuerzo</a></li>
           </ul>
         </li>
     <!--    <li class="treeview">
