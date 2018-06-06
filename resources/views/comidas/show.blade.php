@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Detalles De Enseñanza</h2>
+                <h2> Detalles Del Estudiante</h2>
             </div>
             
         </div>
@@ -38,6 +38,13 @@
             <div class="form-group">
         <h3>        <strong>Enseñanza:</strong>
                 {{ $estudiante->ensenanzas->nombre_ensenanza}}</h3>
+            </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+        <h3>        <strong>Autorización para Almorzar:</strong>
+                {{ $estudiante->permisos_almuerzo_id}}</h3>
             </div>
     </div>
 
