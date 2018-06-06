@@ -10,7 +10,9 @@ use App\Ensenanza;
 use App\Permiso;
 use App\Comida;
 use App\Ingreso;
+use App\Salida;
 use DB;
+
 class IngresoController extends Controller
 {
     /**
@@ -35,10 +37,13 @@ class IngresoController extends Controller
         $estudiante = Estudiante::all();
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
-        $permiso = Permiso::all();       
+        $permiso = Permiso::all();               
         $ingresos = Ingreso::orderBy('id','DESC')->paginate(20);
-        return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante'))
+        return view('ingresos.index',compact('ingresos','ensenanza','permiso','estudiante','curso','ensenanza'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
+
+                    
+
     }
 
     /**
@@ -48,8 +53,8 @@ class IngresoController extends Controller
      */
     public function create()
     {
-        $estudiante = Estudiante::all();
-         return view('ingresos.index',compact('estudiante'));
+          $estudiante = Estudiante::all();
+         return view('ingresos.create',compact('estudiante'));
     }
 
     /**
@@ -67,8 +72,8 @@ class IngresoController extends Controller
        ]);
 
       Ingreso::create($request->all());  
-        return redirect()->route('ingresos.create')
-                        ->with('success','Alumno es retirado correctamente');
+        return redirect()->route('ingresos.index')
+                        ->with('success','Alumno fue ingresado al establecimiento correctamente.');
     }
 
 
@@ -80,14 +85,16 @@ class IngresoController extends Controller
      */
     public function show($id)
     {
-        $ingreso = Ingreso::findOrFail($id);
+
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
         $estudiante = Estudiante::findOrFail($id);
+        $ingreso = Ingreso::findOrFail($id); 
         return view('ingresos.show',compact('ingreso','curso','ensenanza','estudiante'));
       
     }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -98,9 +105,7 @@ class IngresoController extends Controller
     public function edit($id)
     {
         $ingreso = Ingreso::findOrFail($id);
-        $categories = Category::all();
-        $stores = Store::all();
-        return view('ingresos.edit',compact('ingreso','categories','stores'));
+        return view('ingresos.edit',compact('ingreso'));
     }
 
     /**
@@ -117,8 +122,8 @@ class IngresoController extends Controller
             'price' => 'required',
             
         ]);
-        Ingreso::findOrFail($id)->update($request->all());
-        return redirect()->route('ingresos.index')
+        Comida::findOrFail($id)->update($request->all());
+        return redirect()->route('comidas.index')
                         ->with('success','Producto actualizado correctamente');
     }
 
@@ -130,8 +135,8 @@ class IngresoController extends Controller
      */
     public function destroy($id)
     {
-           Ingreso::findOrFail($id)->delete();
-        return redirect()->route('ingresos.index')
+           Comida::findOrFail($id)->delete();
+        return redirect()->route('comidas.index')
                         ->with('success','Producto eliminado correctamente');
     }
 
