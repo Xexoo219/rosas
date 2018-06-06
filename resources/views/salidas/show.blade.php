@@ -49,7 +49,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Ingresado:</strong>
-                {{$created = $salida->created_at->diffForHumans()}}
+                {{$created = $salida->created_at}}
            
             </div>
         </div>
