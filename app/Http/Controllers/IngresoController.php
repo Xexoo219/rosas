@@ -49,7 +49,7 @@ class IngresoController extends Controller
     public function create()
     {
         $estudiante = Estudiante::all();
-         return view('ingresos.create',compact('estudiante'));
+         return view('ingresos.index',compact('estudiante'));
     }
 
     /**
