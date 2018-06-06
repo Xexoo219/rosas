@@ -36,7 +36,7 @@
 
   
 
-    {!! Form::open(array('route' => 'comidas.store','method'=>'POST')) !!}
+    {!! Form::open(array('route' => 'ingresos.store','method'=>'POST')) !!}
 
 
       <div class="col-xs-12 col-sm-12 col-md-12">
