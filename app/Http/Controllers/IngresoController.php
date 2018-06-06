@@ -80,7 +80,7 @@ class IngresoController extends Controller
      */
     public function show($id)
     {
-        $ingreso = Ingreso::findOrFail($id);
+        
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
