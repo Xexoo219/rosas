@@ -25,7 +25,7 @@
 {!! Form::close() !!}
 </div>
     <tr>
-      <th scope="col">ID</th>
+      <th scope="col">M</th>
       <th scope="col">Codigo de Barra</th>
       <th scope="col">Nombre Del Estudiante</th>
       <th scope="col">Curso</th>
