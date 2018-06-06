@@ -41,7 +41,7 @@ class SalidaController extends Controller
         $ensenanza = Ensenanza::all();
         $permiso = Permiso::all();                
         $salidas = Salida::orderBy('id','DESC')->paginate(20);
-        return view('salidas.index',compact('salidas','ensenanza','permiso','estudiante','curso'))
+        return view('salidas.index',compact('salidas','ensenanza','permiso','estudiante','curso','ensenanza'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
 
                     
