@@ -41,28 +41,7 @@
             </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-            <h3>    <strong>Entrada Especial:</strong>
-                {{ $estudiante->entrada_especial}} </h3>
-            </div>
-    </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-           <h3>     <strong>Autorizado Especial de Entrada:</strong>
-                {{  $estudiante->permisos_entrada_id}}</h3>
-            </div>
-    </div>
-
-
-  <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-          <h3>      <strong>Dia y Hora de Ingreso:</strong>
-                {{ $ingreso->created_at}}</h3>
-            </div>
-    </div>  
-
+  
 
 
         <div class="col-xs-12 col-sm-12 col-md-12">
