@@ -41,6 +41,28 @@
             </div>
     </div>
 
+     <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+        <h3>        <strong>Enseñanza:</strong>
+                {{ $estudiante->ensenanzas->nombre_ensenanza}}</h3>
+            </div>
+    </div>
+
+
+  <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+        <h3>        <strong>Entrada Especial:</strong>
+                {{ $estudiante->entrada_especial}}</h3>
+            </div>
+    </div>
+  <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+        <h3>        <strong>Enseñanza:</strong>
+                {{ $estudiante->permisos_salida_id}}</h3>
+            </div>
+    </div>
+
+   
    
 
 
