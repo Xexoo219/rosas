@@ -93,7 +93,7 @@ class SalidaController extends Controller
      */
     public function show($id)
     {
-        $salida = Salida::findOrFail($id);
+
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
