@@ -27,7 +27,7 @@
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
 
-                <h2>Ingresar Alumno a Retirar</h2>
+                <h2>Ingresar Alumno al Establecimiento</h2>
                 <p>&nbsp</p>
             </div>
         </div>

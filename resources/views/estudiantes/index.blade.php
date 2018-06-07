@@ -7,7 +7,9 @@
         </div>
     @endif
 
-
+   <h1>
+        <small>Buscar Estudiante</small>
+      </h1>
 
 
     <div class="container">
