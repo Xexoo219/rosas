@@ -93,11 +93,11 @@ class SalidaController extends Controller
      */
     public function show($id)
     {
-        $salida = Salida::findOrFail($id);
+        $salida = Salida::all($id);
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
-        $estudiante = Estudiante::all($id);
+        $estudiante = Estudiante::findOrFail($id);
         return view('salidas.show',compact('salida','curso','ensenanza','estudiante'));
       
     }
