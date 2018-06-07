@@ -26,7 +26,7 @@ class EnsenanzaController extends Controller
     {
         
   
-  $ensenanzas = Ensenanza::orderBy('id','DESC')->paginate(10);
+  $ensenanzas = Ensenanza::orderBy('id','ASC')->paginate(10);
         return view('ensenanzas.index',compact('ensenanzas'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
            
