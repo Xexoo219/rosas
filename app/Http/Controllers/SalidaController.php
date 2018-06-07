@@ -56,7 +56,8 @@ class SalidaController extends Controller
     public function create()
     {
         $estudiante = Estudiante::all();
-         return view('salidas.create',compact('estudiante'));
+        $salida = Salida::all();
+         return view('salidas.create',compact('estudiante','salida'));
     }
 
     /**
