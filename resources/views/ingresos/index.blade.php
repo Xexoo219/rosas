@@ -6,15 +6,15 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-      <h1>
-        <small>Historico de Ingresos</small>
-      </h1>
+   
     <div class="container">
 <table class="table table-striped">
   <thead class="thead-active">
 
 
-
+   <h1>
+        <small>Historico de Ingresos</small>
+      </h1>
 
 
     <tr>
