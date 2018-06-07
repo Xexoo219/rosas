@@ -221,6 +221,8 @@ desired effect
           </ul>
         </li>
 -->
+
+<!--
           <li class="treeview">
           <a href="#">
             <i class="fa fa-list"></i>
@@ -236,7 +238,7 @@ desired effect
           </ul>
         </li>
 
-
+-->
 
 
       <!-- /.sidebar-menu -->
