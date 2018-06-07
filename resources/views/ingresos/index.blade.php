@@ -31,7 +31,7 @@
   <tbody>
   @foreach($ingresos as $ingreso)
     <tr>
-    <td><a href="{{ route('ingresos.show', $ingreso->estudiantes_id)}}" class="btn btn-primary">{{$ingreso->estudiantes->codigo_barra}}</a> </td>
+    <td><a href="{{ route('ingresos.show', $ingreso->estudiantes_id)}}" class="btn btn-primary">{{$ingreso->id}}</a> </td>
       <td>  {{ $ingreso->estudiantes->nombres}}  {{ $ingreso->estudiantes->apellidos}}</td>
       <td>  {{ $ingreso->estudiantes->permisos_entrada_id}}</td>
      <td>{{($ingreso->created_at)}}</td>
