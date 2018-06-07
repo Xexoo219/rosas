@@ -13,6 +13,9 @@
 
 
 
+   <h1>
+        <small>Historico de Ingresos</small>
+      </h1>
 
 
     <tr>
