@@ -14,7 +14,7 @@
 
 
    <h1>
-        <small>Historico de Ingresos</small>
+        <small>Historico de Almuerzos</small>
       </h1>
 
 
