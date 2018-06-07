@@ -26,7 +26,7 @@ class CursoController extends Controller
     {
         
   
-  $cursos = Curso::orderBy('id','DESC')->paginate(10);
+  $cursos = Curso::orderBy('id','ASC')->paginate(10);
         return view('cursos.index',compact('cursos'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
            
