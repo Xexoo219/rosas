@@ -7,14 +7,16 @@
         </div>
     @endif
 
-   <h1>
-        <small>Buscar Estudiante</small>
-      </h1>
 
 
     <div class="container">
 <table class="table table-striped">
   <thead class="thead-active">
+
+       <h1>
+        <small>Buscar Estudiante</small>
+      </h1>
+
 
 {!! Form::open([ 'route' => 'estudiantes.index','method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
 
