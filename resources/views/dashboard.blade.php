@@ -65,9 +65,9 @@
 
 
                 <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-teal">
+  <!--      <div class="col-lg-3 col-xs-6">
+          
+             <div class="small-box bg-teal">
             <div class="inner">
           <h3>{{ DB::table('salidas')->count('id')}}</h3>
               <sup style="font-size: 20px">&nbsp</sup>
@@ -80,6 +80,8 @@
             <a href="{{route('salidas.index')}}" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
+
+      -->
         <!-- ./col -->
     
 
