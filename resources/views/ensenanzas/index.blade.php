@@ -13,6 +13,9 @@
          
          
         
+   <h1>
+        <small>Tipos de Enseñanzas</small>
+      </h1>
                
            
             </div>
