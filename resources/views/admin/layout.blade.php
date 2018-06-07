@@ -181,7 +181,7 @@ desired effect
                <li><a href="{{route('ingresos.index')}}"><i class="fa fa-circle-o"></i>Historico de Ingresos</a></li>
           </ul>
         </li>
-          <li class="treeview">
+     <!--     <li class="treeview">
           <a href="#">
             <i class="fa fa-home"></i>
             <span>Salida del Colegio</span>
@@ -193,7 +193,7 @@ desired effect
             <li><a href="{{route('salidas.create')}}"><i class="fa fa-circle-o"></i>Retirar Estudiante</a></li>
                <li><a href="{{route('salidas.index')}}"><i class="fa fa-circle-o"></i>Historico de Salidas</a></li>
           </ul>
-        </li>
+        </li> -->
          <li class="treeview">
           <a href="#">
             <i class="fa fa-cutlery"></i>
