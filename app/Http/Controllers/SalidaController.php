@@ -97,7 +97,7 @@ class SalidaController extends Controller
         $curso = Curso::all();
         $ensenanza = Ensenanza::all();
         $permisos_entrada = Permiso::all();
-        $estudiante = Estudiante::findOrFail($id);
+        $estudiante = Estudiante::all($id);
         return view('salidas.show',compact('salida','curso','ensenanza','estudiante'));
       
     }
