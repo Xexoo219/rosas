@@ -26,6 +26,13 @@
             </div>
     </div>
 
+<div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+        <h3>        <strong>Codigo de Barra:</strong>
+                {{ $estudiante->codigo_barra}}</h3>
+            </div>
+    </div>
+
 
     <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -40,6 +47,8 @@
                 {{ $estudiante->ensenanzas->nombre_ensenanza}}</h3>
             </div>
     </div>
+
+
 
     <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
