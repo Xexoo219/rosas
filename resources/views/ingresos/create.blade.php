@@ -27,8 +27,14 @@
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
 
-                <h2>Ingresar Alumno al Establecimiento</h2>
-                <p>&nbsp</p>
+                
+                  <h1>
+        <small>Ingresar Alumno al Establecimiento</small>
+      </h1>
+
+
+               
+              
             </div>
         </div>
     

@@ -27,8 +27,10 @@
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
 
-                <h2>Ingresar almuerzos</h2>
-                <p>&nbsp</p>
+  <h1>
+        <small>Ingresar Almuerzo</small>
+      </h1>
+
             </div>
         </div>
     
