@@ -18,7 +18,7 @@
 
 
     <tr>
-      <th scope="col">Codigo</th>
+      <th scope="col">Nº</th>
       <th scope="col">Nombre Del Estudiante</th>
             <th scope="col">Permiso de Entrada</th>
          <th scope="col">Dia y Hora que Ingresa el Alumno</th>

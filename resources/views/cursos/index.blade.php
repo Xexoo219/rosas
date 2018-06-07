@@ -28,7 +28,7 @@
   <thead class="thead-active">
 
     <tr>
-      <th scope="col">Codigo</th>
+      <th scope="col">Nº</th>
       <th scope="col">Nombre Del Curso</th>
     </tr>
   </thead>
