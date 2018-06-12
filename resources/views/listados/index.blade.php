@@ -21,7 +21,6 @@
       <th scope="col">Funcionario Activo</th>
       <th scope="col">Cargo</th>
        <th scope="col">Ultima Vez Activo</th>
-      <th scope="col">IP</th>
       <th scope="col">Fecha de Ingreso</th>
       
      
@@ -36,7 +35,6 @@
      <td>  {{ $user->name}}</td>
     <td>  {{ $user->role}}</td>
        <td>  {{ $user->ultima_sesion}}</td>
-   <td>  {{ $user->name}}</td>
       <td>{{ $user->created_at}}</td>
     </tr>
     @endforeach
