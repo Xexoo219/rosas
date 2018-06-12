@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Permiso;
+use Illuminate\Support\Str;
+use App\User;
+use DB;
 
-class PermisoController extends Controller
+
+class ListadoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,14 +16,17 @@ class PermisoController extends Controller
      * @return \Illuminate\Http\Response
      */
 
- public function __construct()
-    {
-        $this->middleware('auth');
+    public function __construct(){
+
+       $this->middleware('auth');
     }
+
 
     public function index()
     {
-        return view('permisos');
+      $users = User::orderBy('id','DESC')->paginate(10);
+        return view('listados.index',compact('users'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**

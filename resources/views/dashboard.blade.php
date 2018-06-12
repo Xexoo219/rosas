@@ -129,7 +129,7 @@
             <div class="icon">
              <i class="fa fa-users"></i>
             </div>
-            <a href="" class="small-box-footer"> <i class="fa fa-smile-o"></i></a>
+            <a href="{{ route('listados.index') }}" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
 

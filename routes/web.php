@@ -23,6 +23,6 @@ Route::resource('comidas','ComidaController');
 Route::resource('estudiantes','EstudianteController');
 Route::resource('cursos','CursoController');
 Route::resource('ensenanzas','EnsenanzaController');
-Route::resource('permisos','PermisoController');
+Route::get('/permisos', 'PermisoController@index')->name('permisos');
 Route::resource('ingresos','IngresoController');
 Route::resource('salidas','SalidaController');
