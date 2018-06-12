@@ -34,9 +34,9 @@
     <tr>
     <td><a>{{$user->id}}</a> </td>
      <td>  {{ $user->name}}</td>
-      <td>  {{ $user->role}}</td>
-       <td>  {{ $user->ultima_sesion}}</td>
-     <td>{{ $user->ip}}</td>
+   
+      
+  
       <td>{{ $user->created_at}}</td>
     </tr>
     @endforeach
