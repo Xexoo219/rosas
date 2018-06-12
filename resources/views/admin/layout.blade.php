@@ -109,7 +109,7 @@ desired effect
                 <img src="/adminlte//img/users.png" class="img-circle" alt="User Image">
 
                 <p>
-                   {{ Auth::user()->name }}
+                    {{ Auth::user()->name }}({{ Auth::user()->role }})
                   <small>Miembro desde  {{ Auth::user()->created_at }} </small>
                 </p>
               </li>
