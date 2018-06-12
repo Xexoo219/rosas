@@ -26,3 +26,4 @@ Route::resource('ensenanzas','EnsenanzaController');
 Route::get('/permisos', 'PermisoController@index')->name('permisos');
 Route::resource('ingresos','IngresoController');
 Route::resource('salidas','SalidaController');
+Route::resource('listados','ListadoController');
