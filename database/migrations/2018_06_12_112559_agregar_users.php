@@ -14,8 +14,8 @@ class AgregarUsers extends Migration
     public function up()
     {
            Schema::table('users', function (Blueprint $table) {
-            $table->string('role');
-            $table->ipAddress('ip');
+            $table->string('role')->nullable();
+            $table->ipAddress('ip')->nullable();
             $table->dateTime('ultima_sesion')->nullable();
        
     });
