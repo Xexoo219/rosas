@@ -41,7 +41,6 @@
   </tbody>
 </table>
 {!! $ingresos->render() !!}
-<a href="{{ route('ingresos.create', $ingreso->id)}}" class="btn btn-primary">Ingresar</a>
 
 </div>
 
