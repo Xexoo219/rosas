@@ -42,7 +42,6 @@
   </tbody>
 </table>
 {!! $comidas->render() !!}
-<a href="{{ route('comidas.create', $comida->id)}}" class="btn btn-primary">Ingresar Comida</a>
 
 </div>
 
