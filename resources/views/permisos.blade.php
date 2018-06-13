@@ -69,10 +69,6 @@
       </h1>
       </body>
     </section>
-  <section class="content">
-
-        </div>
-
+  
 
         @endsection
-@stop
