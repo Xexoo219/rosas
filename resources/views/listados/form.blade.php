@@ -14,8 +14,8 @@
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-    <a class="btn btn-primary" href="{{ route('listados.index') }}"> Volver</a>
             <button type="submit" class="btn btn-primary">Guardar</button>
+             <a class="btn btn-primary" href="{{ route('listados.index') }}"> Volver</a>
     </div>
 </div>
 </div>

@@ -12,27 +12,33 @@
 
 
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
+           <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nombre:</strong>
-                {{ $user->name}}
+            <h3>    <strong>Nombre:</strong> 
+                {{ $user->name}} </h3>
             </div>
         </div>
 
          <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Rol:</strong>
-                {{ $user->role}}
+            <h3>    <strong>Rol:</strong> 
+                {{ $user->role}} </h3>
             </div>
-    </div>
+        </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-12">
+         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Ultima Sesión:</strong>
-                {{ $user->ultima_sesion}}
+            <h3>    <strong>Email:</strong> 
+                {{ $user->email}} </h3>
             </div>
-    </div>
+        </div>
 
+     <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <h3>    <strong>Ultima Sesión:</strong> 
+                {{ $user->ultima_sesion}} </h3>
+            </div>
+        </div>
 
 
 
