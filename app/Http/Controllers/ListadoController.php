@@ -69,7 +69,11 @@ class ListadoController extends Controller
      */
     public function edit($id)
     {
-        //
+        
+        $user = User::findOrFail($id);
+        return view('listados.edit',compact('user'));
+
+
     }
 
     /**
@@ -81,7 +85,13 @@ class ListadoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+          request()->validate([
+            'name' => 'required',
+            'role' => 'required',   
+        ]);
+        User::findOrFail($id)->update($request->all());
+        return redirect()->route('listados.index')
+                        ->with('success','Usuario actualizado correctamente');
     }
 
     /**
