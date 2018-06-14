@@ -20,7 +20,7 @@ class EstudianteController extends Controller
 
     public function __construct(){
 
-         $this->middleware(['auth', 'roles:Administrador,Inspector,Visita' ]);
+         $this->middleware(['auth', 'roles:Administrador,Inspector,Inspectora,Visita' ]);
     }
 
 

@@ -19,7 +19,7 @@ class CursoController extends Controller
 
        public function __construct(){
 
-         $this->middleware(['auth', 'roles:Administrador,Inspector' ]);
+         $this->middleware(['auth', 'roles:Administrador,Inspector,Inspectora' ]);
     }
 
     public function index()
