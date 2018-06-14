@@ -58,7 +58,8 @@ class ListadoController extends Controller
      */
     public function show($id)
     {
-        //
+         $user = User::findOrFail($id);
+        return view('listados.show',compact('user'));
     }
 
     /**
