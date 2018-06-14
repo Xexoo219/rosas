@@ -31,7 +31,7 @@
   <tbody>
   @foreach($users as $user)
     <tr>
-    <td><a>{{$user->id}}</a> </td>
+<td><a href="{{ route('listados.show', $user->id)}}" class="btn btn-primary">{{$user->id}}</a> </td>
      <td>  {{ $user->name}}</td>
     <td>  {{ $user->role}}</td>
        <td>  {{ $user->ultima_sesion}}</td>
