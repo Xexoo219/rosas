@@ -48,7 +48,7 @@
 </table>
   <div class="row">
     <div class="col-md-2 col-md-offset-5">
-{!! $user->render() !!}
+{!! $users->render() !!}
 </div>
 
 </div>
