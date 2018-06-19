@@ -24,9 +24,10 @@ class ListadoController extends Controller
 
     public function index()
     {
-      $users = User::orderBy('id','DESC')->paginate(5);
+   $users = User::orderBy('id','ASC')->paginate(10);
         return view('listados.index',compact('users'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
+           
     }
 
     /**
